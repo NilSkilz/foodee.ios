@@ -1,0 +1,34 @@
+#!/bin/bash
+PLIST="${PROJECT_DIR}/${INFOPLIST_FILE}"
+
+VERSION_NUM=$(/usr/libexec/PlistBuddy -c "Print CFBundleShortVersionString" "$PLIST")
+BUILD_NUM=$(/usr/libexec/PlistBuddy -c "Print CFBundleVersion" "$PLIST")
+
+COUNT=$(grep -o [.] <<< $BUILD_NUM | wc -l)
+
+IFS='.'
+
+i=0
+for NUM in $BUILD_NUM
+do
+    echo $NUM;
+    if [ $i -eq $COUNT ]
+    then
+        OLD_BUILD=$NUM
+    fi
+    i=$(($i + 1))
+done
+
+
+NEW_BUILD=$(($OLD_BUILD + 1))
+
+NEW="${VERSION_NUM}.${NEW_BUILD}"
+
+
+echo "OLD_BUILD: $OLD_BUILD"
+echo "NEW_BUILD: $NEW_BUILD"
+echo "NEW: $NEW"
+
+echo "COUNT: $COUNT"
+
+/usr/libexec/PlistBuddy -c "Set :CFBundleVersion ${NEW}" "$PLIST"

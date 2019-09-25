@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ac8-3h-NEg">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="125"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Foodee.png" translatesAutoresizingMaskIntoConstraints="NO" id="PiB-UY-7EX">
+                                        <rect key="frame" x="117" y="29" width="180" height="96"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="180" id="Icb-sG-bq0"/>
+                                            <constraint firstAttribute="height" constant="96" id="jI0-Kt-Jft"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="CDY-MT-k2g"/>
+                                    <constraint firstItem="PiB-UY-7EX" firstAttribute="centerX" secondItem="Ac8-3h-NEg" secondAttribute="centerX" id="nnr-U6-pTx"/>
+                                    <constraint firstAttribute="bottom" secondItem="PiB-UY-7EX" secondAttribute="bottom" id="yFd-cd-utf"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A3o-4G-hVP">
+                                <rect key="frame" x="0.0" y="539" width="414" height="357"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="faR-Lm-ETR">
+                                <rect key="frame" x="0.0" y="125" width="414" height="414"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p9R-uI-86u">
+                                        <rect key="frame" x="80" y="80" width="254" height="254"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="p9R-uI-86u" secondAttribute="height" multiplier="1:1" id="Pk7-6s-h5K"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="p9R-uI-86u" firstAttribute="top" secondItem="faR-Lm-ETR" secondAttribute="top" constant="80" id="EYE-nh-QvB"/>
+                                    <constraint firstItem="p9R-uI-86u" firstAttribute="centerY" secondItem="faR-Lm-ETR" secondAttribute="centerY" id="FiA-cb-Say"/>
+                                    <constraint firstAttribute="bottom" secondItem="p9R-uI-86u" secondAttribute="bottom" constant="80" id="LEV-H0-fCW"/>
+                                    <constraint firstItem="p9R-uI-86u" firstAttribute="leading" secondItem="faR-Lm-ETR" secondAttribute="leading" constant="80" id="Wdk-QK-iA7"/>
+                                    <constraint firstAttribute="height" constant="414" id="dXj-3p-1ZC"/>
+                                    <constraint firstAttribute="trailing" secondItem="p9R-uI-86u" secondAttribute="trailing" constant="80" id="ijT-QP-Hgg"/>
+                                    <constraint firstItem="p9R-uI-86u" firstAttribute="top" secondItem="faR-Lm-ETR" secondAttribute="top" constant="80" id="jD2-7y-qgi"/>
+                                    <constraint firstItem="p9R-uI-86u" firstAttribute="centerX" secondItem="faR-Lm-ETR" secondAttribute="centerX" id="sLG-27-01o"/>
+                                    <constraint firstAttribute="width" secondItem="faR-Lm-ETR" secondAttribute="height" multiplier="69:62" id="u8O-mt-TV9"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="A3o-4G-hVP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0dy-7B-a40"/>
+                            <constraint firstAttribute="bottom" secondItem="A3o-4G-hVP" secondAttribute="bottom" id="7n7-sm-wNW"/>
+                            <constraint firstItem="Ac8-3h-NEg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="9zO-SW-N8S"/>
+                            <constraint firstItem="faR-Lm-ETR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BnI-5n-dRZ"/>
+                            <constraint firstItem="faR-Lm-ETR" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="N2a-Dg-giQ"/>
+                            <constraint firstItem="A3o-4G-hVP" firstAttribute="top" secondItem="faR-Lm-ETR" secondAttribute="bottom" id="OU7-yL-co9"/>
+                            <constraint firstItem="faR-Lm-ETR" firstAttribute="top" secondItem="Ac8-3h-NEg" secondAttribute="bottom" id="Red-3m-RRb"/>
+                            <constraint firstAttribute="trailing" secondItem="Ac8-3h-NEg" secondAttribute="trailing" id="Vav-qj-XAh"/>
+                            <constraint firstItem="Ac8-3h-NEg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Xn6-hH-wLV"/>
+                            <constraint firstItem="A3o-4G-hVP" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="YOO-eg-jQI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="bottomView" destination="A3o-4G-hVP" id="9Vf-Py-yu3"/>
+                        <outlet property="captureView" destination="p9R-uI-86u" id="8oR-QW-EWu"/>
+                        <outlet property="topView" destination="Ac8-3h-NEg" id="Rod-Ef-Qef"/>
+                        <outlet property="viewPort" destination="faR-Lm-ETR" id="gDo-g2-Kw2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Foodee.png" width="450" height="129"/>
+    </resources>
+</document>

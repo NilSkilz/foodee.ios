@@ -1,0 +1,395 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		40073E81233BC44400AFDD35 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40073E80233BC44400AFDD35 /* AppDelegate.m */; };
+		40073E84233BC44400AFDD35 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40073E83233BC44400AFDD35 /* SceneDelegate.m */; };
+		40073E87233BC44400AFDD35 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40073E86233BC44400AFDD35 /* ViewController.m */; };
+		40073E8A233BC44400AFDD35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40073E88233BC44400AFDD35 /* Main.storyboard */; };
+		40073E8C233BC44500AFDD35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40073E8B233BC44500AFDD35 /* Assets.xcassets */; };
+		40073E8F233BC44500AFDD35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40073E8D233BC44500AFDD35 /* LaunchScreen.storyboard */; };
+		40073E92233BC44500AFDD35 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40073E91233BC44500AFDD35 /* main.m */; };
+		40073E9A233BC48A00AFDD35 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40073E99233BC48A00AFDD35 /* AVFoundation.framework */; };
+		40073E9C233BCBA000AFDD35 /* Foodee.png in Resources */ = {isa = PBXBuildFile; fileRef = 40073E9B233BCBA000AFDD35 /* Foodee.png */; };
+		40073EA5233BD1DD00AFDD35 /* incrementBuild in Resources */ = {isa = PBXBuildFile; fileRef = 40073EA4233BD1DD00AFDD35 /* incrementBuild */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		40073E7C233BC44400AFDD35 /* Foodee.ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foodee.ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		40073E7F233BC44400AFDD35 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		40073E80233BC44400AFDD35 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		40073E82233BC44400AFDD35 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		40073E83233BC44400AFDD35 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		40073E85233BC44400AFDD35 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		40073E86233BC44400AFDD35 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		40073E89233BC44400AFDD35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		40073E8B233BC44500AFDD35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		40073E8E233BC44500AFDD35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		40073E90233BC44500AFDD35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40073E91233BC44500AFDD35 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		40073E99233BC48A00AFDD35 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		40073E9B233BCBA000AFDD35 /* Foodee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Foodee.png; sourceTree = "<group>"; };
+		40073EA4233BD1DD00AFDD35 /* incrementBuild */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = incrementBuild; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		40073E79233BC44400AFDD35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40073E9A233BC48A00AFDD35 /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		40073E73233BC44400AFDD35 = {
+			isa = PBXGroup;
+			children = (
+				40073E7E233BC44400AFDD35 /* Foodee.ios */,
+				40073E7D233BC44400AFDD35 /* Products */,
+				40073E98233BC48A00AFDD35 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		40073E7D233BC44400AFDD35 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				40073E7C233BC44400AFDD35 /* Foodee.ios.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		40073E7E233BC44400AFDD35 /* Foodee.ios */ = {
+			isa = PBXGroup;
+			children = (
+				40073EA1233BD1B500AFDD35 /* Scripts */,
+				40073E9B233BCBA000AFDD35 /* Foodee.png */,
+				40073E7F233BC44400AFDD35 /* AppDelegate.h */,
+				40073E80233BC44400AFDD35 /* AppDelegate.m */,
+				40073E82233BC44400AFDD35 /* SceneDelegate.h */,
+				40073E83233BC44400AFDD35 /* SceneDelegate.m */,
+				40073E85233BC44400AFDD35 /* ViewController.h */,
+				40073E86233BC44400AFDD35 /* ViewController.m */,
+				40073E88233BC44400AFDD35 /* Main.storyboard */,
+				40073E8B233BC44500AFDD35 /* Assets.xcassets */,
+				40073E8D233BC44500AFDD35 /* LaunchScreen.storyboard */,
+				40073E90233BC44500AFDD35 /* Info.plist */,
+				40073E91233BC44500AFDD35 /* main.m */,
+			);
+			path = Foodee.ios;
+			sourceTree = "<group>";
+		};
+		40073E98233BC48A00AFDD35 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40073E99233BC48A00AFDD35 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		40073EA1233BD1B500AFDD35 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				40073EA4233BD1DD00AFDD35 /* incrementBuild */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		40073E7B233BC44400AFDD35 /* Foodee.ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40073E95233BC44500AFDD35 /* Build configuration list for PBXNativeTarget "Foodee.ios" */;
+			buildPhases = (
+				40073E78233BC44400AFDD35 /* Sources */,
+				40073E79233BC44400AFDD35 /* Frameworks */,
+				40073E7A233BC44400AFDD35 /* Resources */,
+				40073EA6233BD1E800AFDD35 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Foodee.ios;
+			productName = Foodee.ios;
+			productReference = 40073E7C233BC44400AFDD35 /* Foodee.ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		40073E74233BC44400AFDD35 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Rob Stokes";
+				TargetAttributes = {
+					40073E7B233BC44400AFDD35 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = 40073E77233BC44400AFDD35 /* Build configuration list for PBXProject "Foodee.ios" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 40073E73233BC44400AFDD35;
+			productRefGroup = 40073E7D233BC44400AFDD35 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				40073E7B233BC44400AFDD35 /* Foodee.ios */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		40073E7A233BC44400AFDD35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40073E8F233BC44500AFDD35 /* LaunchScreen.storyboard in Resources */,
+				40073E8C233BC44500AFDD35 /* Assets.xcassets in Resources */,
+				40073E8A233BC44400AFDD35 /* Main.storyboard in Resources */,
+				40073E9C233BCBA000AFDD35 /* Foodee.png in Resources */,
+				40073EA5233BD1DD00AFDD35 /* incrementBuild in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		40073EA6233BD1E800AFDD35 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\n/Users/robstokes/Projects/foodee.ios/Foodee.ios/Scripts/incrementBuild\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		40073E78233BC44400AFDD35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40073E87233BC44400AFDD35 /* ViewController.m in Sources */,
+				40073E81233BC44400AFDD35 /* AppDelegate.m in Sources */,
+				40073E92233BC44500AFDD35 /* main.m in Sources */,
+				40073E84233BC44400AFDD35 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		40073E88233BC44400AFDD35 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40073E89233BC44400AFDD35 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		40073E8D233BC44500AFDD35 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40073E8E233BC44500AFDD35 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		40073E93233BC44500AFDD35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		40073E94233BC44500AFDD35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		40073E96233BC44500AFDD35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7WQ27WK5DH;
+				INFOPLIST_FILE = Foodee.ios/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.limeninja.Foodee-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		40073E97233BC44500AFDD35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7WQ27WK5DH;
+				INFOPLIST_FILE = Foodee.ios/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.limeninja.Foodee-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		40073E77233BC44400AFDD35 /* Build configuration list for PBXProject "Foodee.ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40073E93233BC44500AFDD35 /* Debug */,
+				40073E94233BC44500AFDD35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40073E95233BC44500AFDD35 /* Build configuration list for PBXNativeTarget "Foodee.ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40073E96233BC44500AFDD35 /* Debug */,
+				40073E97233BC44500AFDD35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 40073E74233BC44400AFDD35 /* Project object */;
+}
