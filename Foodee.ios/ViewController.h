@@ -17,7 +17,15 @@
 @property(nonatomic, retain) IBOutlet UIView *viewPort;
 @property(nonatomic, retain) IBOutlet UIView *captureView;
 
+@property(nonatomic, retain) IBOutlet UIButton *addBtn;
+@property(nonatomic, retain) IBOutlet UIButton *minusBtn;
+
+@property(nonatomic, retain) IBOutlet UISegmentedControl *segment;
+
 @property(nonatomic, retain) AVCaptureSession *session;
+
+- (IBAction)addBtnTapped:(id)sender;
+- (IBAction)minusBtnTapped:(id)sender;
  
 @end
 

@@ -20,6 +20,7 @@
     
     [self setupScanner];
     [self addStyling];
+    [self addBtnTapped:self];
     
 }
 
@@ -85,5 +86,16 @@
     [self presentViewController:alert animated:YES completion:nil];
 }
 
+- (void)addBtnTapped:(id)sender {
+    self.addBtn.imageView.image = [UIImage imageNamed:@"plus-selected.png"];
+    self.minusBtn.imageView.image = [UIImage imageNamed:@"plus.png"];
+    self.segment.hidden = YES;
+}
+
+- (void)minusBtnTapped:(id)sender {
+    self.addBtn.imageView.image = [UIImage imageNamed:@"plus.png"];
+    self.minusBtn.imageView.image = [UIImage imageNamed:@"minus-selected.png"];
+    self.segment.hidden = NO;
+}
 
 @end

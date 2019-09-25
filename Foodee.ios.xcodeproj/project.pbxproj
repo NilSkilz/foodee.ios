@@ -17,6 +17,10 @@
 		40073E9A233BC48A00AFDD35 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40073E99233BC48A00AFDD35 /* AVFoundation.framework */; };
 		40073E9C233BCBA000AFDD35 /* Foodee.png in Resources */ = {isa = PBXBuildFile; fileRef = 40073E9B233BCBA000AFDD35 /* Foodee.png */; };
 		40073EA5233BD1DD00AFDD35 /* incrementBuild in Resources */ = {isa = PBXBuildFile; fileRef = 40073EA4233BD1DD00AFDD35 /* incrementBuild */; };
+		4091557A233C17DC00EE6557 /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 40915578233C17DB00EE6557 /* plus.png */; };
+		4091557B233C17DC00EE6557 /* minus.png in Resources */ = {isa = PBXBuildFile; fileRef = 40915579233C17DC00EE6557 /* minus.png */; };
+		4091557E233C1A4300EE6557 /* plus-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 4091557C233C1A4300EE6557 /* plus-selected.png */; };
+		4091557F233C1A4300EE6557 /* minus-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 4091557D233C1A4300EE6557 /* minus-selected.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +39,10 @@
 		40073E99233BC48A00AFDD35 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		40073E9B233BCBA000AFDD35 /* Foodee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Foodee.png; sourceTree = "<group>"; };
 		40073EA4233BD1DD00AFDD35 /* incrementBuild */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = incrementBuild; sourceTree = "<group>"; };
+		40915578233C17DB00EE6557 /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
+		40915579233C17DC00EE6557 /* minus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = minus.png; sourceTree = "<group>"; };
+		4091557C233C1A4300EE6557 /* plus-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plus-selected.png"; sourceTree = "<group>"; };
+		4091557D233C1A4300EE6557 /* minus-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "minus-selected.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +77,7 @@
 		40073E7E233BC44400AFDD35 /* Foodee.ios */ = {
 			isa = PBXGroup;
 			children = (
+				40915577233C17B700EE6557 /* Images */,
 				40073EA1233BD1B500AFDD35 /* Scripts */,
 				40073E9B233BCBA000AFDD35 /* Foodee.png */,
 				40073E7F233BC44400AFDD35 /* AppDelegate.h */,
@@ -100,6 +109,17 @@
 				40073EA4233BD1DD00AFDD35 /* incrementBuild */,
 			);
 			path = Scripts;
+			sourceTree = "<group>";
+		};
+		40915577233C17B700EE6557 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				4091557D233C1A4300EE6557 /* minus-selected.png */,
+				4091557C233C1A4300EE6557 /* plus-selected.png */,
+				40915579233C17DC00EE6557 /* minus.png */,
+				40915578233C17DB00EE6557 /* plus.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,10 +180,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4091557B233C17DC00EE6557 /* minus.png in Resources */,
 				40073E8F233BC44500AFDD35 /* LaunchScreen.storyboard in Resources */,
 				40073E8C233BC44500AFDD35 /* Assets.xcassets in Resources */,
+				4091557F233C1A4300EE6557 /* minus-selected.png in Resources */,
 				40073E8A233BC44400AFDD35 /* Main.storyboard in Resources */,
 				40073E9C233BCBA000AFDD35 /* Foodee.png in Resources */,
+				4091557A233C17DC00EE6557 /* plus.png in Resources */,
+				4091557E233C1A4300EE6557 /* plus-selected.png in Resources */,
 				40073EA5233BD1DD00AFDD35 /* incrementBuild in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,6 +362,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7WQ27WK5DH;
 				INFOPLIST_FILE = Foodee.ios/Info.plist;
@@ -347,6 +372,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.limeninja.Foodee-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -355,6 +381,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7WQ27WK5DH;
 				INFOPLIST_FILE = Foodee.ios/Info.plist;
@@ -364,6 +391,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.limeninja.Foodee-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
