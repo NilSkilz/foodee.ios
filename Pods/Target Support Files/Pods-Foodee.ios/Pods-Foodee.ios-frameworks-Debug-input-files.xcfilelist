@@ -1,0 +1,7 @@
+${PODS_ROOT}/Target Support Files/Pods-Foodee.ios/Pods-Foodee.ios-frameworks.sh
+${BUILT_PRODUCTS_DIR}/ISO8601DateFormatterValueTransformer/ISO8601DateFormatterValueTransformer.framework
+${BUILT_PRODUCTS_DIR}/M13ProgressSuite/M13ProgressSuite.framework
+${BUILT_PRODUCTS_DIR}/RKValueTransformers/RKValueTransformers.framework
+${BUILT_PRODUCTS_DIR}/RestKit/RestKit.framework
+${BUILT_PRODUCTS_DIR}/SOCKit/SOCKit.framework
+${BUILT_PRODUCTS_DIR}/TransitionKit/TransitionKit.framework

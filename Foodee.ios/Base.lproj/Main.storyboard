@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -46,6 +43,9 @@
                                             <constraint firstAttribute="width" constant="89" id="T7C-Kb-sch"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="plus-selected.png"/>
+                                        <connections>
+                                            <action selector="addBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Eow-aH-Woc"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="boq-wh-e9w">
                                         <rect key="frame" x="242" y="60" width="89" height="84"/>
@@ -54,9 +54,12 @@
                                             <constraint firstAttribute="width" constant="89" id="x49-U6-seM"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="minus.png"/>
+                                        <connections>
+                                            <action selector="minusBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hF6-jD-OPA"/>
+                                        </connections>
                                     </button>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="vak-gd-LED">
-                                        <rect key="frame" x="44.5" y="284" width="325" height="29"/>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vak-gd-LED">
+                                        <rect key="frame" x="44.5" y="281" width="325" height="32"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="325" id="YHa-5H-ABl"/>
                                         </constraints>
@@ -65,7 +68,8 @@
                                             <segment title="Consume All"/>
                                             <segment title="Mark as Spoiled"/>
                                         </segments>
-                                        <color key="tintColor" red="0.4039215686" green="0.83921568629999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <color key="selectedSegmentTintColor" systemColor="systemGroupedBackgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </segmentedControl>
                                 </subviews>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -123,7 +127,7 @@
                         <outlet property="addBtn" destination="gR9-io-qRo" id="QHK-ca-SDQ"/>
                         <outlet property="bottomView" destination="A3o-4G-hVP" id="9Vf-Py-yu3"/>
                         <outlet property="captureView" destination="p9R-uI-86u" id="8oR-QW-EWu"/>
-                        <outlet property="minusBtn" destination="boq-wh-e9w" id="ro5-e7-JbA"/>
+                        <outlet property="minusBtn" destination="boq-wh-e9w" id="yqL-EG-Fca"/>
                         <outlet property="segment" destination="vak-gd-LED" id="LJA-dv-dOg"/>
                         <outlet property="topView" destination="Ac8-3h-NEg" id="Rod-Ef-Qef"/>
                         <outlet property="viewPort" destination="faR-Lm-ETR" id="gDo-g2-Kw2"/>

@@ -76,26 +76,27 @@
 - (void)captureOutput:(AVCaptureOutput *)output didOutputMetadataObjects:(NSArray<__kindof AVMetadataObject *> *)metadataObjects fromConnection:(AVCaptureConnection *)connection {
     [_session stopRunning];
     AVMetadataMachineReadableCodeObject *obj = metadataObjects.firstObject;
-    NSLog(obj.stringValue);
     
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Got One!" message:obj.stringValue preferredStyle:UIAlertControllerStyleAlert];
     [alert addAction:[UIAlertAction actionWithTitle:@"Cool" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
-        [_session startRunning];
+        [self.session startRunning];
     }]];
     
     [self presentViewController:alert animated:YES completion:nil];
 }
 
 - (void)addBtnTapped:(id)sender {
-    self.addBtn.imageView.image = [UIImage imageNamed:@"plus-selected.png"];
-    self.minusBtn.imageView.image = [UIImage imageNamed:@"plus.png"];
-    self.segment.hidden = YES;
+    NSLog(@"Add Tapped");
+    _addBtn.imageView.image = [UIImage imageNamed:@"plus-selected.png"];
+    _minusBtn.imageView.image = [UIImage imageNamed:@"minus.png"];
+    _segment.hidden = YES;
 }
 
 - (void)minusBtnTapped:(id)sender {
-    self.addBtn.imageView.image = [UIImage imageNamed:@"plus.png"];
-    self.minusBtn.imageView.image = [UIImage imageNamed:@"minus-selected.png"];
-    self.segment.hidden = NO;
+    NSLog(@"Minus Tapped");
+    _minusBtn.imageView.image = [UIImage imageNamed:@"minus-selected.png"];
+    _addBtn.imageView.image = [UIImage imageNamed:@"plus.png"];
+    _segment.hidden = NO;
 }
 
 @end

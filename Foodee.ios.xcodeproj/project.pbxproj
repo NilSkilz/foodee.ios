@@ -21,6 +21,10 @@
 		4091557B233C17DC00EE6557 /* minus.png in Resources */ = {isa = PBXBuildFile; fileRef = 40915579233C17DC00EE6557 /* minus.png */; };
 		4091557E233C1A4300EE6557 /* plus-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 4091557C233C1A4300EE6557 /* plus-selected.png */; };
 		4091557F233C1A4300EE6557 /* minus-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 4091557D233C1A4300EE6557 /* minus-selected.png */; };
+		40B0C08A233E37C500E077C0 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 40B0C089233E37C500E077C0 /* DataManager.m */; };
+		40B0C08D233E388500E077C0 /* NetworkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 40B0C08C233E388500E077C0 /* NetworkEngine.m */; };
+		40B0C090233E38AA00E077C0 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 40B0C08F233E38AA00E077C0 /* Constants.m */; };
+		DA7818EF807761B6DC870931 /* Pods_Foodee_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFEBAC309FE1F6531599AC4E /* Pods_Foodee_ios.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +47,15 @@
 		40915579233C17DC00EE6557 /* minus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = minus.png; sourceTree = "<group>"; };
 		4091557C233C1A4300EE6557 /* plus-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plus-selected.png"; sourceTree = "<group>"; };
 		4091557D233C1A4300EE6557 /* minus-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "minus-selected.png"; sourceTree = "<group>"; };
+		40B0C088233E37C500E077C0 /* DataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		40B0C089233E37C500E077C0 /* DataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		40B0C08B233E388500E077C0 /* NetworkEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkEngine.h; sourceTree = "<group>"; };
+		40B0C08C233E388500E077C0 /* NetworkEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkEngine.m; sourceTree = "<group>"; };
+		40B0C08E233E38AA00E077C0 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		40B0C08F233E38AA00E077C0 /* Constants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		50C0493EDEA52849B5130FEE /* Pods-Foodee.ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foodee.ios.release.xcconfig"; path = "Target Support Files/Pods-Foodee.ios/Pods-Foodee.ios.release.xcconfig"; sourceTree = "<group>"; };
+		7D581ED9A77C27D5C7AD922D /* Pods-Foodee.ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foodee.ios.debug.xcconfig"; path = "Target Support Files/Pods-Foodee.ios/Pods-Foodee.ios.debug.xcconfig"; sourceTree = "<group>"; };
+		AFEBAC309FE1F6531599AC4E /* Pods_Foodee_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Foodee_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,18 +64,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				40073E9A233BC48A00AFDD35 /* AVFoundation.framework in Frameworks */,
+				DA7818EF807761B6DC870931 /* Pods_Foodee_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C5270ED8B3CA5256738881E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7D581ED9A77C27D5C7AD922D /* Pods-Foodee.ios.debug.xcconfig */,
+				50C0493EDEA52849B5130FEE /* Pods-Foodee.ios.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		40073E73233BC44400AFDD35 = {
 			isa = PBXGroup;
 			children = (
 				40073E7E233BC44400AFDD35 /* Foodee.ios */,
 				40073E7D233BC44400AFDD35 /* Products */,
 				40073E98233BC48A00AFDD35 /* Frameworks */,
+				0C5270ED8B3CA5256738881E /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +102,7 @@
 		40073E7E233BC44400AFDD35 /* Foodee.ios */ = {
 			isa = PBXGroup;
 			children = (
+				40B0C087233E37AF00E077C0 /* Singletons */,
 				40915577233C17B700EE6557 /* Images */,
 				40073EA1233BD1B500AFDD35 /* Scripts */,
 				40073E9B233BCBA000AFDD35 /* Foodee.png */,
@@ -99,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				40073E99233BC48A00AFDD35 /* AVFoundation.framework */,
+				AFEBAC309FE1F6531599AC4E /* Pods_Foodee_ios.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -122,6 +149,19 @@
 			path = Images;
 			sourceTree = "<group>";
 		};
+		40B0C087233E37AF00E077C0 /* Singletons */ = {
+			isa = PBXGroup;
+			children = (
+				40B0C088233E37C500E077C0 /* DataManager.h */,
+				40B0C089233E37C500E077C0 /* DataManager.m */,
+				40B0C08B233E388500E077C0 /* NetworkEngine.h */,
+				40B0C08C233E388500E077C0 /* NetworkEngine.m */,
+				40B0C08E233E38AA00E077C0 /* Constants.h */,
+				40B0C08F233E38AA00E077C0 /* Constants.m */,
+			);
+			path = Singletons;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,10 +169,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 40073E95233BC44500AFDD35 /* Build configuration list for PBXNativeTarget "Foodee.ios" */;
 			buildPhases = (
+				468BBC3E426B6BD831D1ED3A /* [CP] Check Pods Manifest.lock */,
 				40073E78233BC44400AFDD35 /* Sources */,
 				40073E79233BC44400AFDD35 /* Frameworks */,
 				40073E7A233BC44400AFDD35 /* Resources */,
 				40073EA6233BD1E800AFDD35 /* ShellScript */,
+				3A1FC76035384A7FE44B9783 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -195,6 +237,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3A1FC76035384A7FE44B9783 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Foodee.ios/Pods-Foodee.ios-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Foodee.ios/Pods-Foodee.ios-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Foodee.ios/Pods-Foodee.ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		40073EA6233BD1E800AFDD35 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -212,6 +271,28 @@
 			shellPath = /bin/sh;
 			shellScript = "\n/Users/robstokes/Projects/foodee.ios/Foodee.ios/Scripts/incrementBuild\n";
 		};
+		468BBC3E426B6BD831D1ED3A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Foodee.ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -220,8 +301,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				40073E87233BC44400AFDD35 /* ViewController.m in Sources */,
+				40B0C08A233E37C500E077C0 /* DataManager.m in Sources */,
 				40073E81233BC44400AFDD35 /* AppDelegate.m in Sources */,
 				40073E92233BC44500AFDD35 /* main.m in Sources */,
+				40B0C08D233E388500E077C0 /* NetworkEngine.m in Sources */,
+				40B0C090233E38AA00E077C0 /* Constants.m in Sources */,
 				40073E84233BC44400AFDD35 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,6 +444,7 @@
 		};
 		40073E96233BC44500AFDD35 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D581ED9A77C27D5C7AD922D /* Pods-Foodee.ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -379,6 +464,7 @@
 		};
 		40073E97233BC44500AFDD35 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50C0493EDEA52849B5130FEE /* Pods-Foodee.ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

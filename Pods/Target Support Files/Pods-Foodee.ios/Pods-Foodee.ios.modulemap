@@ -1,0 +1,6 @@
+framework module Pods_Foodee_ios {
+  umbrella header "Pods-Foodee.ios-umbrella.h"
+
+  export *
+  module * { export * }
+}
