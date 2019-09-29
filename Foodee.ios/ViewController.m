@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "DataManager.h"
+#import "Constants.h"
 
 @interface ViewController ()
 
@@ -21,6 +23,7 @@
     [self setupScanner];
     [self addStyling];
     [self addBtnTapped:self];
+    
     
 }
 
@@ -77,16 +80,79 @@
     [_session stopRunning];
     AVMetadataMachineReadableCodeObject *obj = metadataObjects.firstObject;
     
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Got One!" message:obj.stringValue preferredStyle:UIAlertControllerStyleAlert];
-    [alert addAction:[UIAlertAction actionWithTitle:@"Cool" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
-        [self.session startRunning];
-    }]];
+    NSLog(@"%@, ", [NSString stringWithFormat:@"Barcode %@", obj.stringValue]);
+    [self.viewPort makeToastActivity:CSToastPositionCenter];
+//    [self.HUD performAction:M13ProgressViewActionNone animated:YES];
+//     [self.HUD setPrimaryColor:PRIMARY_COLOR];
+//    [self.HUD show:YES];
     
-    [self presentViewController:alert animated:YES completion:nil];
+    DataManager *dataManager = [DataManager sharedManager];
+    
+    if (self.consuming) {
+        switch (self.segment.selectedSegmentIndex) {
+            case 0:
+            {
+                [dataManager consumeOneWithBarcode:obj.stringValue withSuccess:^(Product *product) {
+                    [self resume];
+                } failure:^(NSError *error) {
+                     [self resume];
+                }];
+            }
+                break;
+            case 1:
+            {
+               [dataManager consumeAllWithBarcode:obj.stringValue withSuccess:^(Product *product) {
+                    [self resume];
+               } failure:^(NSError *error) {
+                   [self resume];
+               }];
+            }
+               break;
+            case 2:
+            {
+               [dataManager markSpoiledWithBarcode:obj.stringValue withSuccess:^(Product *product) {
+                    [self resume];
+               } failure:^(NSError *error) {
+                  [self resume];
+               }];
+            }
+               break;
+            default:
+                break;
+        }
+        
+    } else {
+        [dataManager addProductWithBarcode:obj.stringValue withSuccess:^(Product *product) {
+            if (product.name) {
+               [self resume];
+                
+                [self.viewPort makeToast:[NSString stringWithFormat:@"Added 1 x %@", product.name]
+                duration:3.0
+                position:CSToastPositionBottom];
+                
+            } else {
+               [self resume];
+                
+                [self.viewPort makeToast:[NSString stringWithFormat:@"Product not found"]
+                duration:3.0
+                position:CSToastPositionBottom];
+                
+            }
+           } failure:^(NSError *error) {
+               [self resume];
+           }];
+    }
 }
+
+- (void)resume {
+    [self.viewPort hideToastActivity];
+    [self.session startRunning];
+}
+
 
 - (void)addBtnTapped:(id)sender {
     NSLog(@"Add Tapped");
+     self.consuming = false;
     _addBtn.imageView.image = [UIImage imageNamed:@"plus-selected.png"];
     _minusBtn.imageView.image = [UIImage imageNamed:@"minus.png"];
     _segment.hidden = YES;
@@ -94,6 +160,7 @@
 
 - (void)minusBtnTapped:(id)sender {
     NSLog(@"Minus Tapped");
+    self.consuming = true;
     _minusBtn.imageView.image = [UIImage imageNamed:@"minus-selected.png"];
     _addBtn.imageView.image = [UIImage imageNamed:@"plus.png"];
     _segment.hidden = NO;

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1100"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F96F0DEC1137D6CA4F5256EBBB54AE75"
-               BuildableName = "TransitionKit.framework"
+               BlueprintIdentifier = "3BB8CACD5DC3F62C8B8891F71A83CCAE"
                BlueprintName = "TransitionKit"
-               ReferencedContainer = "container:Pods.xcodeproj">
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "TransitionKit.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

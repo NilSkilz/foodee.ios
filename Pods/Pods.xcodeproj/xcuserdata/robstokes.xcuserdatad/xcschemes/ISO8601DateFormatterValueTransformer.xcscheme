@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1100"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "019D324C33AA4168765618FDF1D763D5"
-               BuildableName = "ISO8601DateFormatterValueTransformer.framework"
+               BlueprintIdentifier = "91A1F3309C63E1A347FE2543E5054EAF"
                BlueprintName = "ISO8601DateFormatterValueTransformer"
-               ReferencedContainer = "container:Pods.xcodeproj">
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "ISO8601DateFormatterValueTransformer.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

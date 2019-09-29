@@ -7,6 +7,7 @@ target 'Foodee.ios' do
 
     pod 'RestKit', '~> 0.27.2'
     pod 'M13ProgressSuite', '~> 1.2.8'
+    pod 'Toast', '~> 4.0.0'
   # Pods for Foodee.ios
 
 end

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -24,6 +24,7 @@
 		40B0C08A233E37C500E077C0 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 40B0C089233E37C500E077C0 /* DataManager.m */; };
 		40B0C08D233E388500E077C0 /* NetworkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 40B0C08C233E388500E077C0 /* NetworkEngine.m */; };
 		40B0C090233E38AA00E077C0 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 40B0C08F233E38AA00E077C0 /* Constants.m */; };
+		40E60D7F2341648B000B5F2D /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E60D7E2341648B000B5F2D /* Product.m */; };
 		DA7818EF807761B6DC870931 /* Pods_Foodee_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFEBAC309FE1F6531599AC4E /* Pods_Foodee_ios.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,8 @@
 		40B0C08C233E388500E077C0 /* NetworkEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkEngine.m; sourceTree = "<group>"; };
 		40B0C08E233E38AA00E077C0 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		40B0C08F233E38AA00E077C0 /* Constants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		40E60D7D2341648B000B5F2D /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
+		40E60D7E2341648B000B5F2D /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
 		50C0493EDEA52849B5130FEE /* Pods-Foodee.ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foodee.ios.release.xcconfig"; path = "Target Support Files/Pods-Foodee.ios/Pods-Foodee.ios.release.xcconfig"; sourceTree = "<group>"; };
 		7D581ED9A77C27D5C7AD922D /* Pods-Foodee.ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foodee.ios.debug.xcconfig"; path = "Target Support Files/Pods-Foodee.ios/Pods-Foodee.ios.debug.xcconfig"; sourceTree = "<group>"; };
 		AFEBAC309FE1F6531599AC4E /* Pods_Foodee_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Foodee_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,7 +80,6 @@
 				7D581ED9A77C27D5C7AD922D /* Pods-Foodee.ios.debug.xcconfig */,
 				50C0493EDEA52849B5130FEE /* Pods-Foodee.ios.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -102,6 +104,7 @@
 		40073E7E233BC44400AFDD35 /* Foodee.ios */ = {
 			isa = PBXGroup;
 			children = (
+				40E60D7C2341648B000B5F2D /* Classes */,
 				40B0C087233E37AF00E077C0 /* Singletons */,
 				40915577233C17B700EE6557 /* Images */,
 				40073EA1233BD1B500AFDD35 /* Scripts */,
@@ -160,6 +163,15 @@
 				40B0C08F233E38AA00E077C0 /* Constants.m */,
 			);
 			path = Singletons;
+			sourceTree = "<group>";
+		};
+		40E60D7C2341648B000B5F2D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				40E60D7D2341648B000B5F2D /* Product.h */,
+				40E60D7E2341648B000B5F2D /* Product.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,6 +317,7 @@
 				40073E81233BC44400AFDD35 /* AppDelegate.m in Sources */,
 				40073E92233BC44500AFDD35 /* main.m in Sources */,
 				40B0C08D233E388500E077C0 /* NetworkEngine.m in Sources */,
+				40E60D7F2341648B000B5F2D /* Product.m in Sources */,
 				40B0C090233E38AA00E077C0 /* Constants.m in Sources */,
 				40073E84233BC44400AFDD35 /* SceneDelegate.m in Sources */,
 			);

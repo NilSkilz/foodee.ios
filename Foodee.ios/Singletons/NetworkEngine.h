@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <RestKit/RestKit.h>
 #import "NetworkEngine.h"
+#import "Product.h"
 
 @protocol NetworkEngineDelegate <NSObject>
 
@@ -26,17 +27,12 @@
 
 + (id)sharedEngine;
 
-//- (void)loginWith:(User *)user
-//      withSuccess:(void (^)(User *user))success
-//       andFailure:(void (^)(NSError *error))failure;
-//
-//- (void)resetPasswordForUser:(User *)user
-//                 withSuccess:(void (^)(User *user))success
-//                  andFailure:(void (^)(NSError *error))failure;
+
+
 
 - (void)get:(NSString *)url
 withMapping:(RKObjectMapping *)mapping
-withSuccess:(void (^)(NSArray *objects))success
+withSuccess:(void (^)(Product *product))success
     failure:(void (^)(NSError *error))failure;
 
 - (void)getOne:(NSString *)url

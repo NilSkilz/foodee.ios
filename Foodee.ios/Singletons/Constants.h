@@ -11,7 +11,7 @@
 
 
 // API URL
-#define BASE_URL "http://139.59.181.88/api/v1/"
+#define BASE_URL "http://192.168.1.158:4000/api/"
 #define API_URL BASE_URL
 
 
@@ -22,6 +22,9 @@ FOUNDATION_EXPORT NSString *const kUserKey;
 
 #define getColour(cname) [[Constants sharedInstance] colorFromHexString:cname]
 
+
+
+#define PRIMARY_COLOR UIColorFromRGB(0x61DAFB)
 
 // Default Fonts
 #define FONT_LIGHT_XSMALL [UIFont fontWithName:@"TitilliumWeb-Light" size:12]
@@ -75,8 +78,6 @@ alpha:1.0]
 
 + (id)sharedInstance;
 
-- (void)addValidationTo:(UITextField *)textField withIcon:(UILabel *)icon;
-- (BOOL)validateString:(NSString *)string withPattern:(NSString *)pattern;
 - (UIColor *)colorFromHexString:(NSString *)hexString;
 
 @end

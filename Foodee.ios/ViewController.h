@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
-
+#import <M13ProgressSuite/M13ProgressSuite-umbrella.h>
+#import "UIView+Toast.h"
 
 @interface ViewController : UIViewController <AVCaptureMetadataOutputObjectsDelegate>
 
@@ -23,6 +24,10 @@
 @property(nonatomic, retain) IBOutlet UISegmentedControl *segment;
 
 @property(nonatomic, retain) AVCaptureSession *session;
+
+@property(nonatomic, retain) M13ProgressHUD *HUD;
+
+@property(nonatomic) BOOL consuming;
 
 - (IBAction)addBtnTapped:(id)sender;
 - (IBAction)minusBtnTapped:(id)sender;

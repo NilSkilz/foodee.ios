@@ -10,6 +10,4 @@
 
 @implementation Constants
 
-NSString *const kUserKey = @"user";
-
 @end

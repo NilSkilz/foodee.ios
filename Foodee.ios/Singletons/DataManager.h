@@ -9,19 +9,13 @@
 #import <Foundation/Foundation.h>
 #import "NetworkEngine.h"
 #import "M13ProgressHUD.h"
-
-#import "Team.h"
-#import "Strat.h"
-#import "Operator.h"
-#import "Loadout.h"
-
+#import "Product.h"
 
 @protocol DataManagerDelegate <NSObject>
 
 @optional
 
-- (void)squadJoined;
-- (void)squadCreated;
+- (void)productAdded:(NSString *)name;
 
 @end
 
@@ -33,37 +27,24 @@
 
 @property (nonatomic, strong) NetworkEngine *networkEngine;
 
-@property (nonatomic, strong) Team *team;
-@property (nonatomic, strong) NSMutableArray *strats;
 
 + (id)sharedManager;
 
-- (void)logout;
 
-// App Manager
+- (void)addProductWithBarcode:(NSString *)barcode
+                  withSuccess:(void (^) (Product *product))success
+                      failure:(void (^) (NSError *error))failure;
 
-- (void)getStratsWithSuccess:(void (^) (NSArray *strats))success
-                     failure:(void (^) (NSError *error))failure;
+- (void)consumeOneWithBarcode:(NSString *)barcode
+                  withSuccess:(void (^) (Product *product))success
+                      failure:(void (^) (NSError *error))failure;
 
-- (void)getTeamWithCode:(NSString *)code andPassword:(NSString *)password
-            WithSuccess:(void (^) (Team *team))success
-                failure:(void (^) (NSError *error))failure;
+- (void)consumeAllWithBarcode:(NSString *)barcode
+                  withSuccess:(void (^) (Product *product))success
+                      failure:(void (^) (NSError *error))failure;
 
-- (void)createTeamWithName:(NSString *)name andPassword:(NSString *)password
-               WithSuccess:(void (^) (Team *team))success
-                   failure:(void (^) (NSError *error))failure;
-
-- (void)createStrat:(Strat *)strat
-        WithSuccess:(void (^) (Strat *strat))success
-            failure:(void (^) (NSError *error))failure;
-
-- (void)updateStrat:(Strat *)strat
-        WithSuccess:(void (^) (Strat *strat))success
-            failure:(void (^) (NSError *error))failure;
-
-
-//- (void)postFile:(NSString *)filePath
-//     WithSuccess:(void (^) (void))success
-//         failure:(void (^) (NSError *error))failure;
+- (void)markSpoiledWithBarcode:(NSString *)barcode
+                   withSuccess:(void (^) (Product *product))success
+                       failure:(void (^) (NSError *error))failure;
 
 @end
