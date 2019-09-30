@@ -154,14 +154,14 @@
     NSLog(@"Add Tapped");
      self.consuming = false;
     _addBtn.imageView.image = [UIImage imageNamed:@"plus-selected.png"];
-    _minusBtn.imageView.image = [UIImage imageNamed:@"minus.png"];
+    _minusBtn.imageView.image = [UIImage imageNamed:@"plus-selected.png"];
     _segment.hidden = YES;
 }
 
 - (void)minusBtnTapped:(id)sender {
     NSLog(@"Minus Tapped");
     self.consuming = true;
-    _minusBtn.imageView.image = [UIImage imageNamed:@"minus-selected.png"];
+    _minusBtn.imageView.image = [UIImage imageNamed:@"plus-selected.png"];
     _addBtn.imageView.image = [UIImage imageNamed:@"plus.png"];
     _segment.hidden = NO;
 }

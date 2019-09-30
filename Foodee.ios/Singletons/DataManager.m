@@ -61,17 +61,61 @@
                   withSuccess:(void (^) (Product *product))success
                       failure:(void (^) (NSError *error))failure {
     
+    NSLog(@"Consuming One Product");
+    NSString *url = [NSString stringWithFormat:@"stock/barcode/one/%@", barcode];
+
+    RKObjectMapping *responseMapping = [RKObjectMapping mappingForClass:[Product class]];
+    [responseMapping addAttributeMappingsFromDictionary:[self getMappingAttributesForProduct]];
+        
+    // Create POST Request
+    [self.networkEngine get:url withMapping:responseMapping withSuccess:^(Product *product) {
+        NSLog(@"Consumed Product: %@", product);
+        success(product);
+    } failure:^(NSError *error) {
+        NSLog(@"Error: %@", error);
+        failure(error);
+    }];
 }
 
 - (void)consumeAllWithBarcode:(NSString *)barcode
                   withSuccess:(void (^) (Product *product))success
                       failure:(void (^) (NSError *error))failure {
     
+    NSLog(@"Consuming All Product");
+        NSString *url = [NSString stringWithFormat:@"stock/barcode/all/%@", barcode];
+
+        RKObjectMapping *responseMapping = [RKObjectMapping mappingForClass:[Product class]];
+        [responseMapping addAttributeMappingsFromDictionary:[self getMappingAttributesForProduct]];
+            
+        // Create POST Request
+        [self.networkEngine get:url withMapping:responseMapping withSuccess:^(Product *product) {
+            NSLog(@"Consumed Product: %@", product);
+            success(product);
+        } failure:^(NSError *error) {
+            NSLog(@"Error: %@", error);
+            failure(error);
+        }];
+    
 }
 
 - (void)markSpoiledWithBarcode:(NSString *)barcode
                    withSuccess:(void (^) (Product *product))success
                        failure:(void (^) (NSError *error))failure {
+    
+    NSLog(@"Spoiling One Product");
+        NSString *url = [NSString stringWithFormat:@"stock/barcode/spoiled/%@", barcode];
+
+        RKObjectMapping *responseMapping = [RKObjectMapping mappingForClass:[Product class]];
+        [responseMapping addAttributeMappingsFromDictionary:[self getMappingAttributesForProduct]];
+            
+        // Create POST Request
+        [self.networkEngine get:url withMapping:responseMapping withSuccess:^(Product *product) {
+           NSLog(@"Consumed Product: %@", product);;
+           success(product);
+        } failure:^(NSError *error) {
+            NSLog(@"Error: %@", error);
+            failure(error);
+        }];
     
 }
 
