@@ -110,7 +110,7 @@
             
         // Create POST Request
         [self.networkEngine get:url withMapping:responseMapping withSuccess:^(Product *product) {
-           NSLog(@"Consumed Product: %@", product);;
+           NSLog(@"Spoiled Product: %@", product);;
            success(product);
         } failure:^(NSError *error) {
             NSLog(@"Error: %@", error);

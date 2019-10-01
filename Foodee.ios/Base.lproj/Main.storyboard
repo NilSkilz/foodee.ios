@@ -53,7 +53,7 @@
                                             <constraint firstAttribute="height" constant="84" id="iMl-fd-yAG"/>
                                             <constraint firstAttribute="width" constant="89" id="x49-U6-seM"/>
                                         </constraints>
-                                        <state key="normal" title="Button" image="minus.png"/>
+                                        <state key="normal" title="Button" image="minus-selected.png"/>
                                         <connections>
                                             <action selector="minusBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hF6-jD-OPA"/>
                                         </connections>
@@ -69,7 +69,7 @@
                                             <segment title="Mark as Spoiled"/>
                                         </segments>
                                         <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                        <color key="selectedSegmentTintColor" systemColor="systemGroupedBackgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="selectedSegmentTintColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </segmentedControl>
                                 </subviews>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -140,7 +140,7 @@
     </scenes>
     <resources>
         <image name="Foodee.png" width="450" height="129"/>
-        <image name="minus.png" width="992" height="992"/>
+        <image name="minus-selected.png" width="992" height="992"/>
         <image name="plus-selected.png" width="992" height="992"/>
     </resources>
 </document>
